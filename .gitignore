@@ -1,0 +1,12 @@
+# VS Code
+.vscode/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+# Virtual-envs
+venv/
+.venv/
+# Secrets
+.env
+.sharepoint_service.py

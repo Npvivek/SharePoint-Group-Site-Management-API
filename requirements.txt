@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+httpx
+msal
+python-dotenv
+python-slugify
+pydantic-settings
+
+# ── dev / test tooling ──
+pytest
+requests
