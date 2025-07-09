@@ -49,6 +49,8 @@
 }
 ```
 
+> **Important:** If the site currently has only **one owner**, always **add** the new owner *before* you **remove** the existing one; otherwise you might leave the site without any owner permissions.
+
 ---
 
 ## 3. Remove Owners
@@ -120,10 +122,10 @@
 
 ---
 
-**Note:**
+### Notes
 
-* All requests require `Content-Type: application/json` header.
-* Use the `groupId` and `siteId` returned from the site creation response for subsequent calls.
-* You can add/remove multiple users at once by passing multiple emails in `user_upns`.
-* `privacy` can be either `"Private"` or `"Public"`.
-* `description` is optional but must be 1–1024 characters if included.
+* All requests require the header `Content-Type: application/json`.
+* Reuse the `groupId` and `siteId` returned by the **Create Site** call for subsequent operations.
+* You can add or remove multiple users by listing multiple addresses in `user_upns`.
+* `privacy` accepts `"Private"` (default) or `"Public"`.
+* `description` is optional but must be 1–1024 characters if provided.
