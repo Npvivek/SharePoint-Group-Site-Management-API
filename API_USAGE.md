@@ -125,7 +125,7 @@
 ### Notes
 
 * All requests require the header `Content-Type: application/json`.
-* Reuse the `groupId` and `siteId` returned by the **Create Site** call for subsequent operations.
+* Store the `groupId`, `siteId`, **and** `siteUrl` returned by the **Create Site** response; use `groupId` / `siteId` for later API calls and `siteUrl` to open the site in a browser.
 * You can add or remove multiple users by listing multiple addresses in `user_upns`.
 * `privacy` accepts `"Private"` (default) or `"Public"`.
 * `description` is optional but must be 1–1024 characters if provided.
