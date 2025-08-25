@@ -120,9 +120,8 @@ The API uses standard HTTP status codes and provides a consistent JSON error for
 ### HTTP Status Codes
 | Status Code | Description |
 |-------------|-------------|
-| `200` | Success (GET, PATCH) |
+| `200` | Success (GET, PATCH, DELETE) |
 | `201` | Created (POST) |
-| `204` | No Content (DELETE) |
 | `400` | Bad Request (Invalid input format) |
 | `404` | Not Found (DL doesn't exist) |
 | `409` | Conflict (DL already exists) |
@@ -255,8 +254,12 @@ The API uses standard HTTP status codes and provides a consistent JSON error for
 
 **Description:** Permanently deletes a distribution list.
 
-**Success Response (204 No Content):**
-An empty response body.
+**Success Response (200 OK):**
+```json
+{
+  "message": "Distribution List '{dlId}' deleted successfully."
+}
+```
 
 **Possible Errors:**
 - `404 Not Found`: The specified distribution list does not exist
