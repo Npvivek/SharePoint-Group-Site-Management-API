@@ -373,5 +373,5 @@ For technical support:
 ---
 
 **Service Version**: 2.0  
-**Last Updated**: August 2025  
+**Last Updated**: November 2025  
 **Supported APIs**: Microsoft Graph API v1.0, Exchange Online REST API
